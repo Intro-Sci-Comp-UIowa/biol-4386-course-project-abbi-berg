@@ -1,6 +1,6 @@
-#Light Intensity Induces Homosexual Courtship in Drosphila
+# Light Intensity Induces Homosexual Courtship in Drosphila
 
-##Introduction
+## Introduction
 Courtship behaviors and rituals between male and female drosophila have been
 extensively studied, however more recently, courtship behaviors between only 
 male drosophila have been discovered and the factors that influence this 
@@ -31,7 +31,7 @@ experiment is also done including equal parts male and female flies and light
 intensity has not shown to change the frequency of courtship between males and 
 females. 
 
-##Figure to reproduce
+## Figure to reproduce
 For the purposes of this project, would like to produce a figure that is 
 effective at displaying how increasing light intensity increases the frequency 
 of male-male courtship behavior in drosophila, whereas male female courtship 
@@ -71,7 +71,7 @@ in the Figure 1 from Lumley, Michalczyk, et al, I would also like to add
 s.e.m. lines like to each point that would represent the top 25th percentile of 
 the time and bottom 25th percentile to each point.
 
-##Steps to produce figure
+## Steps to produce figure
 1. I will use preexisting data that indicates the presence of a courtship 
 event at 96 intervals (12 intervals for each 2 min. light intensity 
 period) to find the average number of occurrences of the 10 videos. 
