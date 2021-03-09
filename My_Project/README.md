@@ -22,8 +22,9 @@ It is unknown why male drosophila would perform these courtship specific
 behaviors when females are not present. In my lab we are studying what 
 influences the intensity of these behaviors, specifically we have found that 
 male-male drosophila courtship behaviors become more frequent when the 
-intensity of white light is increased. We have observed this by placing male 
-drosophila in flat ‘areas’ in which the courtship behaviors (specifically the 
+intensity of white light is increased with the most courtship behavior 
+occuring at 17,000 lux. We have observed this by placing male 
+drosophila in flat ‘arenas’ in which the courtship behaviors (specifically the 
 wing extension, chasing, and chaining behaviors) are observed and the frequency 
 of these behaviors is noted. We are able to use LED lighting that can be made 
 more or less intense to then observe the frequency of behavior. A control 
@@ -81,7 +82,12 @@ I will also find the top and bottom 25 percentile range.
 trial. I will need to add error bars for each of the points.
  
 3. I will then need to add color to the background of the graph to show the 
-intensity of light increases every 2 min.
+intensity of light increases every 2 min. Light intensity begins at 400 lux then increases to 700 lux, 14,000 lux and finially 17,000 lux.
 
 4. I will use R for the statistical anaylsis of the data and for the creation
 of the graph. 
+
+5. I would also like to explore an addition pannel that would allow me to quan-
+tify the divergence between male and female behavior. This additonal graph wou-
+ld show how the male courtship inceases with increasing light intensity while
+male female courtship shows no difference.
