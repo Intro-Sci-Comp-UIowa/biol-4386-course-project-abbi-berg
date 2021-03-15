@@ -42,7 +42,7 @@ I will plan to reproduce a modified version of Figure 1 from Lumley,
 Michalczyk, et al. Figure one is a line graph with distribution error bars at
 each point. 
 
-***INSERT FIGURE PICTURE***
+![image](https://user-images.githubusercontent.com/78931288/111090280-35d9f180-84fd-11eb-9421-81b5c378c061.png)
 
 My data is as follows: 8 minute videos of male-male and male-female trails have 
 been taken. Every 2 minutes throughout the video, the light intensity is 
