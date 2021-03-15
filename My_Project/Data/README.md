@@ -7,6 +7,8 @@ between male drosphila.
 Data was aquired under the supervision of Dr. Wu and Dr. Ueda in cordination with
 the University of Iowa Biology research facilities. 
 
+The excel document was uploaded on March 12, 2021. Data was collected Febuary 2021.
+
 8 minute videos of male-male and male-female trails have been taken. Male-male trials
 inclued 8 male flies contained in an arena. Male-female trials contained 4 male flies
 and 4 virgin female flies. Male flies were 14 to 17 days old were seperated into male 
