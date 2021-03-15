@@ -8,7 +8,7 @@ behavior is the subject of our study. Traditionally, in order to engage in
 courtship with a female, a male drosophila must perform a courtship ritual to 
 entice the female. The male will first begin this ritual by orienting 
 themselves in the direction of the female and will chase the female around. 
-Next the male fly will tap the female fly and extend its wing out and vibrate 
+Next the male fly will tap the female fly then extend its wing out and vibrate 
 it to produce a courtship song. The final step in courtship before copulation 
 is that the male will lick the genitalia of the female. If all goes well the 
 end result will be copulation between the sexes. Some of these courtship 
@@ -23,14 +23,14 @@ behaviors when females are not present. In my lab we are studying what
 influences the intensity of these behaviors, specifically we have found that 
 male-male drosophila courtship behaviors become more frequent when the 
 intensity of white light is increased with the most courtship behavior 
-occuring at 17,000 lux. We have observed this by placing male 
+occuring at 17,000 lux white light. We have observed this by placing male 
 drosophila in flat ‘arenas’ in which the courtship behaviors (specifically the 
 wing extension, chasing, and chaining behaviors) are observed and the frequency 
 of these behaviors is noted. We are able to use LED lighting that can be made 
 more or less intense to then observe the frequency of behavior. A control 
 experiment is also done including equal parts male and female flies and light 
-intensity has not shown to change the frequency of courtship between males and 
-females. 
+intensity has shown to have less effect on the frequency of courtship between males 
+and females. 
 
 ## Figure to reproduce
 For the purposes of this project, would like to produce a figure that is 
@@ -39,10 +39,11 @@ of male-male courtship behavior in drosophila, whereas male female courtship
 frequency is much less effected by the intensity of light.
 
 I will plan to reproduce a modified version of Figure 1 from Lumley, 
-Michalczyk, et al. Figure one is a line graph with distribution error bars at
-each point. 
+Michalczyk, et al. 
 
 ![image](https://user-images.githubusercontent.com/78931288/111090280-35d9f180-84fd-11eb-9421-81b5c378c061.png)
+Figure one is a line graph with distribution error bars at
+each point. 
 
 My data is as follows: 8 minute videos of male-male and male-female trails have 
 been taken. Every 2 minutes throughout the video, the light intensity is 
@@ -62,7 +63,7 @@ period of time.
 See the drawing bellow for reference on how I intend to apply above line-graph 
 technique for my purposes…
 
-***INSERT MY OWN FIGURE PICTURE***
+<img width="337" alt="image" src="https://user-images.githubusercontent.com/78931288/111090324-5ace6480-84fd-11eb-8a77-a23e712b8ab3.png">
 
 I would also like to highlight each 2 min. section of the line graph with an 
 increasing shade of color to indicate that the intensity of light is 
@@ -82,7 +83,8 @@ I will also find the top and bottom 25 percentile range.
 trial. I will need to add error bars for each of the points.
  
 3. I will then need to add color to the background of the graph to show the 
-intensity of light increases every 2 min. Light intensity begins at 400 lux then increases to 700 lux, 14,000 lux and finially 17,000 lux.
+intensity of light increases every 2 min. Light intensity begins at 400 lux 
+then increases to 700 lux, 14,000 lux and finially 17,000 lux.
 
 4. I will use R for the statistical anaylsis of the data and for the creation
 of the graph. 
