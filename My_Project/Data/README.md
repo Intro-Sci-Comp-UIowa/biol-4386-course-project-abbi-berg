@@ -1,4 +1,4 @@
-### Light Protocol Data
+# Light Protocol Data
 Data was aquired to test the hypothesis that intense light induces courtship behavior
 between male drosphila.
 
