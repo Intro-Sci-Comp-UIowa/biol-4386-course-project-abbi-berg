@@ -15,14 +15,24 @@ and 4 virgin female flies. Male flies were 14 to 17 days old were seperated into
 only vials on the day they emerged from their puple stage. For our purposes the flies
 are considered 0 days old when collected. Vigin female flies were collected similarly
 and are aged 3 to 7 days.
-Every 2 minutesthroughout the video, the light intensity is increases begining with 
+Every 2 minutes throughout the video, the light intensity is increases begining with 
 400 lux light then increasing to 700 lux, 10,000 lux and 17,000 lux. 
 The presence of a wing extension, chasing or chaining event is recorded 12 times 
 throughout each 2 min. light interval. 
 
-10 videos for each trail were recorded and the data present in the excel file encompases 
-both trials.
+# Male-Male_LightIntensity.csv
+contains all trials containing male only flies. The total number of videos each with 
+8 flies is 10 making the total number of flies observed =80 flies.
 
-Difficulty producing a checksum number was in part due to the nature of the file. 
-I have not yet figured out how to produce a checksum for an excel document. 
+The .csv file was converted from .lxsx on March 25, 2021. 
+The shasum value for this file is:
+  f855de6d98276dd8bcb5b515fb3b04c918e2c709  Male-Male_LightIntensity.csv
 
+# Male-FemaleControl-LightIntensity.csv
+contains all trials containing both male and female flies. A total number of videos 
+each with 4 female and 4 male flies is 8 making the total number of flies observed
+= 32 females and 32 males. 
+
+The .csv file was converted from .lxsx on March 25, 2021
+The shasum value for this file is:
+  63f1549eca724e8bb528050a0c5d39b745c5e196  Male-FemaleControl-LightIntensity.csv
