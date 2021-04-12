@@ -20,19 +20,11 @@ Every 2 minutes throughout the video, the light intensity is increases begining 
 The presence of a wing extension, chasing or chaining event is recorded 12 times 
 throughout each 2 min. light interval. 
 
-# Male-Male_LightIntensity.csv
-contains all trials containing male only flies. The total number of videos each with 
-8 flies is 10 making the total number of flies observed =80 flies.
+# 04112021LightProtocol.csv
 
-The .csv file was converted from .lxsx on March 25, 2021. 
-The shasum value for this file is:
-  f855de6d98276dd8bcb5b515fb3b04c918e2c709  Male-Male_LightIntensity.csv
+was converted from .xlsx to .csv on April 11, 2021. 
 
-# Male-FemaleControl-LightIntensity.csv
-contains all trials containing both male and female flies. A total number of videos 
-each with 4 female and 4 male flies is 8 making the total number of flies observed
-= 32 females and 32 males. 
+A shasum of the document yeilded...
+shasum 04112021LightProtocol.csv 
+6f3af3d57422f1a50c42c5ab7a684a575656e8b1  04112021LightProtocol.csv
 
-The .csv file was converted from .lxsx on March 25, 2021
-The shasum value for this file is:
-  63f1549eca724e8bb528050a0c5d39b745c5e196  Male-FemaleControl-LightIntensity.csv
