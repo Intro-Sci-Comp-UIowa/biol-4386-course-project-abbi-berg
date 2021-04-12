@@ -96,7 +96,11 @@ tify the divergence between male and female behavior. This additonal graph wou-
 ld show how the male courtship inceases with increasing light intensity while
 male female courtship shows no difference. 
 
+Please also update the Materials and Methods section with the relevant details for producing the figure. 
+
 ## Reflections
+
+### Homework 1
 
 From my homework 1 feedback, I was made aware that my description of the 
 intensity of light was unclear. I addressed this by adding the specific 
@@ -111,3 +115,13 @@ included in the male-female quantification of behavior because when counting
 the presence of each behavior it is difficult to distinguish if the behavior 
 what sex the behavior was directed towards. I still would like to explore 
 this more.
+
+### Homework 2 
+
+
+## Results 
+you will show a preliminary figure or table. This can be a panel of a complex figure, or a crude plot that is starting to look like the final form. Provide the legend and some text description for the figure as you would find in a publication. 
+-whats next
+
+## Discussion
+ where you can discuss the difficulties you encountered in reproducing the result, and any discrepancies between your reproduction and the published result. 
