@@ -123,7 +123,7 @@ I recieved feedback from my homework 2 that I needed to fix my data format so it
 Here is how I am thinking the box plot format would look. 
 
 My feedback also suggested that I think about adding another figure to demonstrate how some behaviors may be greater effected by the presence of intense light by comparing the difference between the male only and male female trials. I think this would still be something to consider dispite that I am altering the type of plot that I will use. I still think that another plot that measures the difference between the previous light step and the next light step would be something to consider. 
-See bellow
+See below
 ![image](https://user-images.githubusercontent.com/78931288/114344265-1e564e80-9b25-11eb-9fb3-ddb71789ab05.png)
 
 Maybe something like this could be overlayed ontop of the boxplots. First order of buisness, I need to better understand how I need to format my data so that I can create a boxplot using ggplot. 
