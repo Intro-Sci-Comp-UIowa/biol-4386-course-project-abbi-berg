@@ -1,0 +1,75 @@
+---
+title: "Light Intensity Figure"
+author: "Abbi Berg"
+date: "4/9/2021"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+For the purposes of this project, would like to produce a figure that is effective at displaying how increasing light intensity increases the frequency of male-male courtship behavior in drosophila, whereas male female courtship frequency is much less effected by the intensity of light.
+
+## Working with the data
+
+```{r}
+## Load data mining software and light intensity data
+library(tidyverse)
+Intensitydat <- read.csv("data/04112021LightProtocol.csv", )
+
+## Reformat data for analysis
+# remove blank rows and columns added by Excel.
+Intensitydat <- Intensitydat[c(1:20), c(1:14)]
+
+# remove two rows with no data
+Intensitydat <- Intensitydat[-c(3:4),]
+
+# add lux value to last few columns
+colnames(Intensitydat)[12:14] = paste0(colnames(Intensitydat)[12:14], ".lux.17000")
+
+# the lux.400 column names need to be changed to the same format
+colnames(Intensitydat)[3:5] = c("wing.extension.lux.400", "chasing.lux.400", "chaining.lux.400")
+
+## Reshape data
+
+# create columns lux, behavior, count. 
+Intensitydat_long <- pivot_longer(Intensitydat, 
+                                  cols = wing.extension.lux.400:chaining.lux.17000,
+                                  names_to = c("behavior", "lux"),
+                                  names_pattern = "(.*).[L.   l]ux.([0-9]+)",
+                                  values_to = "count")
+
+# convert lux data to numberic data
+Intensitydat_long$lux = as.numeric(Intensitydat_long$lux)
+# View(Intensitydat_long)
+```
+
+## Visualizing Intensity Data
+
+```{r}
+# Start creating the plots
+
+# load ggplot
+library(ggplot2)
+
+# convert Lux data to factor variable
+Intensitydat_long$lux <- as.factor(Intensitydat_long$lux)
+
+# create data frame <- decided to filter this using facet grid instead
+# chaining.dat <- filter(Intensitydat_long, behavior=="chaining")
+
+# create plot
+p <- ggplot(data=Intensitydat_long, aes(x= lux, y = count, fill=MM.MF)) + geom_boxplot() + facet_grid(vars(behavior), scale = "free") + geom_jitter(color="black", size=0.4, alpha=0.9) 
+
+# add mean points
+#p + stat_summary(fun.y=mean, geom="point", shape=23, size=4)
+
+print(p)
+
+```
+
