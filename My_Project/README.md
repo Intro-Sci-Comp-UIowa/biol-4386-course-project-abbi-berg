@@ -43,7 +43,7 @@ Michalczyk, et al.
 
 ![image](https://user-images.githubusercontent.com/78931288/111090280-35d9f180-84fd-11eb-9421-81b5c378c061.png)
 
-Figure one. A line graph with distribution error bars at each point. For this projects 
+Figure one. A line graph with SEM bars at each point. For this projects 
 purposes, the actual information presented in this graph is less relevent than the 
 format of the figure itself. I would like to modify a version of this figure so that
 points on the line would represent the frequency of each courtship event. The X axis would
