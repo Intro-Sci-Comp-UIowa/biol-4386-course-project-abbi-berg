@@ -7,3 +7,4 @@ The course was taken Spring of 2021 and taught by professor Bin He.
 | Homework1.md  | begining pipeline for line graph |
 | Homework2.md  | Reflection from homework 1 |
 | Homework3.md  | Reflections from homework 2; Ideas about switching to boxplot format |
+| Finalpipeline.md | final pipeline used to make the scatter and bar graph |
