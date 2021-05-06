@@ -135,12 +135,10 @@ See below
 
 Maybe something like this could be overlayed ontop of the boxplots. First order of buisness, I need to better understand how I need to format my data so that I can create a boxplot using ggplot. 
 
-## Results 
-you will show a preliminary figure or table. This can be a panel of a complex figure, or a crude plot that is starting to look like the final form. Provide the legend and some text description for the figure as you would find in a publication. 
--whats next
+### Results 
 I have been stuggling trying to format my data. I have spent the last week trying to format data that could be used to make the line plot I initially suggested for use in R studio and I think that it is too complex and that the data I already have updated and now reformated will be better to use. So far in R studio I have created a markdown file to keep track of the code I am using to produce my figure. 
 
 So far what I have done is uploaded my .csv file to R studio using the read_csv function. Unfortunately this is as far as I have gotten. I am really struggling to figure how to tell ggplot what I want as my X and Y varriables for the plot. I want on the x axis in this order... MM 400 lux chasing, MF 400 lux chasing, MM 600 lux chasing, MF 600 lux chasing, MM 1200 lux chasing, MF 1200 chasing, MM 17,000 lux chasing, MF 17,000 chasing. On the Y axis I don't want a particular column of data, but the numbers underneith the columns listed. This is truely step one for me. After this then I can assign colors to each box (pink to symbolize MF trials and blue to symbolize MM trials). After I finish this very important step, then I might consider overlaying lines like the ones drawn above to show the difference between the light steps. 
 
-## Discussion
+### Discussion
  Ultimately I think that I didn't understand what data I had. The data I have been uploading does not contain the specific timepoints, but rather it has the total number of times a certain behavior occured out of 12 total possible times at each light intensity. I think that using this synthesized data is better 1) because I already have it uploaded and 2) because the formating is closer to being ready for use by ggplot than the alternative. After I realised that the data I had uploaded and the data I would need for my figure was different, I attempted to format the alternative data to use in R studio and I could not figure a good way to use and manipulate it with R.  
