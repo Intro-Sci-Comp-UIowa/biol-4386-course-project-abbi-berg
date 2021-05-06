@@ -1,0 +1,119 @@
+---
+title: "Light Intensity Figure"
+author: "Abbi Berg"
+date: "4/9/2021"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+
+For the purposes of this project, would like to produce a figure that is effective at displaying how increasing light intensity increases the frequency of male-male courtship behavior in drosophila, whereas male-female courtship frequency is much less effected by the intensity of light.
+
+# Uploading and modifying data format
+## Converting Intensity_dat to long format
+Code to change data formate was provided by Ethan Bahl on April 18th, 2021
+
+```{r}
+
+## Load data mining software and light intensity data
+library(tidyverse)
+Intensitydat <- read.csv("data/04112021LightProtocol.csv", )
+
+## Reformat data for analysis
+# remove blank rows and columns added by Excel.
+Intensitydat <- Intensitydat[c(1:20), c(1:14)]
+
+# remove two rows with no data
+Intensitydat <- Intensitydat[-c(3:4),]
+
+# add lux value to last few columns
+colnames(Intensitydat)[12:14] = paste0(colnames(Intensitydat)[12:14], ".lux.17000")
+
+# the lux.400 column names need to be changed to the same format
+colnames(Intensitydat)[3:5] = c("wing.extension.lux.400", "chasing.lux.400", "chaining.lux.400")
+
+## Reshape data
+
+# create columns lux, behavior, count. 
+Intensitydat_long <- pivot_longer(Intensitydat, 
+                                  cols = wing.extension.lux.400:chaining.lux.17000,
+                                  names_to = c("behavior", "lux"),
+                                  names_pattern = "(.*).[L.   l]ux.([0-9]+)",
+                                  values_to = "count")
+
+# convert lux data to numberic data
+Intensitydat_long$lux = as.numeric(Intensitydat_long$lux)
+# View(Intensitydat_long)
+```
+
+# Calculating statistics for intensity data
+Bars on for the bar graph portion will be ploted using means. The bar graph will
+also have bars to represent the standard deviation. 
+
+```{r}
+## Function to calculate the mean and the standard deviation for each group 
+# Code extracted from STHDA website on April 20th, 2021 (http://www.sthda.com/english/wiki/ggplot2-error-bars-quick-start-guide-r-software-and-data-visualization)
+
+# data : a data frame
+# varname : the name of a column containing the variable
+  #to be summariezed
+# groupnames : vector of column names to be used as
+  # grouping variables
+
+# producing the function for statistical analysis
+data_summary <- function(data, varname, groupnames){
+  require(plyr)
+  summary_func <- function(x, col){
+    c(mean = mean(x[[col]], na.rm=TRUE),
+      sd = sd(x[[col]], na.rm=TRUE))
+  }
+  data_sum<-ddply(data, groupnames, .fun=summary_func,
+                  varname)
+  data_sum <- rename(data_sum, c("mean" = varname))
+ return(data_sum)
+}
+
+# convert converting data variables to factor variables
+Intensitydat_long$lux <- as.factor(Intensitydat_long$lux)
+Intensitydat_long$MM.MF <- as.factor(Intensitydat_long$MM.MF)
+Intensitydat_long$behavior <- as.factor(Intensitydat_long$behavior)
+
+# get means and averages from data
+df2 <- data_summary(Intensitydat_long, varname="count", 
+                    groupnames=c("behavior", "lux","MM.MF"))
+
+# df2 is summarized data from Intensitydat_long containing the means and std for each behavior, light intensity (lux) and for male only and male female trails (MM.MF)
+
+# View(df2)
+
+```
+
+## Visualizing light intensity data
+```{r}
+# load ggplot
+library(ggplot2)
+
+## Make the bar graph with SEM lines as well as scatter plot of raw data points
+p2 <- ggplot(NULL, aes(x= lux, y=count, fill=MM.MF)) +  #Use ggplot to set structure of the      graph. Using NULL allows you to call 2 different data frames within the same figure
+  
+  geom_bar(data = df2, stat="identity", color="black",  #makes the bar graph from the Intensity data means (df2 file). 
+           position=position_dodge(.9)) + # position dodge allows for two categories of data (MM.MF) at the same lux value.
+  
+  geom_point(data = Intensitydat_long, position=position_jitterdodge(.7)) + 
+  facet_grid(vars(behavior)) + # makes the raw data points from the unsummarized data set. 
+  
+geom_errorbar(data = df2,aes(ymin=count, ymax=count+sd), width=.2, position=position_dodge(.9)) # makes the error bars on the bar graphs using standard deviation 
+
+
+## Add title and scale
+p2 + labs(x="Light Intesntiy (lux)", y = "Number of Events")
+
+print(p2)
+
+```
