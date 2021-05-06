@@ -9,25 +9,30 @@ between male drosphila.
 | Male-FemaleControl-LightIntensity_shortformat.csv | short data format file for all male and female control trials |
 | 04112021_LightProtocol_shortformat.csv | data used in production of figures; shasum availible bellow; in short format |
 
-## Data aquisision
+## Acquiring Data
 
-Data was aquired under the supervision of Dr. Wu and Dr. Ueda in cordination with
+Data was acquired under the supervision of Dr. Wu and Dr. Ueda in coordination with
 the University of Iowa Biology research facilities. 
 
-The excel document was uploaded on March 12, 2021. Data was collected Febuary 2021.
+The excel document was uploaded on March 12, 2021. Data was collected February 2021.
 
-8 minute videos of male-male and male-female trails have been taken. Male-male trials
-inclued 8 male flies contained in an chamber. Male-female trials contained 4 male flies
-and 4 virgin female flies. Male flies were 14 to 17 days old were seperated into male 
-only vials on the day they emerged from their puple stage. For our purposes the flies
-are considered 0 days old when collected. Vigin female flies were collected similarly
-and are aged 3 to 7 days.
-Every 2 minutes throughout the video, the light intensity is increases begining with 
-400 lux light then increasing to 700 lux, 10,000 lux and 17,000 lux. 
-The presence of a wing extension, chasing or chaining event is recorded 12 times 
-throughout each 2 min. period. Of the 2 min. each chamber was observed for 1 min. 
-The observer analyses the presence (yes or no) of each event for 5 secs between 2 chambers
-throughout the course of the video. 
+8 minute videos of male-male and male-female trails have been taken. Flies were exposed
+to each light setting for 2 minutes and the light intensity began at 400 lux then increased 
+to 700 lux, 10,000 lux and 17,000 lux in that order. 
+
+Male-male trials contained 8 male flies in an chamber and Male-female trials contained 
+4 male flies and 4 virgin female flies in each chamber. Male flies were 14 to 17 days 
+old were separated into male only vials on the day they emerged from their pupal stage. 
+For our purposes the flies are considered 0 days old when collected. Virgin female flies 
+were collected similarly and are aged 3 to 7 days.
+
+Videos were analyzed by hand. The presence of a wing extension, chasing or chaining event 
+was recorded to have or not have happened in a 5 second time window. 5 seconds of observation 
+were followed by 5 seconds of no observation and then the process was repeated. Each chamber was observed 
+for a total of 1 minute per light intensity setting. The total number of times that an event
+occurred was recorded for each video at each light intensity. The maximum number of times
+an event could be present for each light intensity is 12 times. 
+
 
 # 04112021_LightProtocol_shortformat.csv
 
