@@ -151,26 +151,38 @@ further help aid in the quest to reason why male *Drosophila* will court other m
 even when seemingly their energy may be better spent courting female *Drosophila*.
 
 ## Reflection
-I was very supprised at how difficult it was for me to simply produce any figure in 
+I was very surprised at how difficult it was for me to simply produce any figure in 
 R Studio using my data. For the longest time I was convinced I was using the ggplot
 function incorrectly, however when I learned I needed to convert my data from wide 
-format to long format, my challenges producing a plot were much better understood. 
+format to long format, my challenges producing a plot were much better understood.
+Producing my first boxplot using my data was certainly a high point for me in the project.
 I think the biggest take away I have from this project is that I now have a better
-understanding of how data must be formated for use by programs such as R. I think 
-that also the process of workshoping my figure and developing it to further serve 
+understanding of how data must be formatted for use by programs such as R. I think 
+that also the process of workshopping my figure and developing it to further serve 
 my purpose forced me to learn many graphing functions in ggplot which I can now use 
 for future projects. I really feel that I would've been much better off having had
 the knowledge of how to visualize data in R earlier in my undergraduate career. In 
-past projects and lab reports I always struggled using Microsoft to produce figure 
+past projects and lab reports I always struggled using Microsoft to produce figures 
 because I would often have ideas for the graph that Excel did not have the functionality
 to do. 
-Another skill I much appreciate learning from this project is using R Markdown files.
-I really love how you can annotate and section code in markdown. I think this 
-function is a very useful tool that promotes reproducability as it allows you to
-really spell out why certain code is used. I know that for my purposes, from this 
-project, I know how a reliable R Markdown file that I can make small modifications
-to to visualize other data sets. 
 
+Another skill I much appreciate learning from this project is how to use R Markdown files.
+I really love how you can annotate and section code in markdown. I think this 
+function is a very useful tool that promotes reproducibility as it allows you to
+really spell out why certain code is used. I know that for my purposes, from this 
+project I now have a reliable R Markdown file that I can make small modifications
+to to visualize other data sets. I know that if I came back to this project in 
+a couple years, that using my markdown file I would be able to understand how the
+figure was produced. 
+
+This method of documenting and managing projects using GitHub was also new to 
+me, but I feel that it is a very useful project management tool. I have implemented
+a similar file organization system to the google drive that we use in my lab for
+this project. Instead of README.md files, I created README.md style documents that 
+help make navigating through the directory more user friendly. I like putting tables
+that describe each file in the folder in those README.md files as they ensure
+it is clear what is in the file and helps to prevent lost files. Since this project
+I have also been more mindful of how to name files consistently and descriptively.
 
 ## References
 Hall JC. The mating of a fly. Science. 1994 Jun 17;264(5166):1702-14. doi: 10.1126/science.8209251. PMID: 8209251.
